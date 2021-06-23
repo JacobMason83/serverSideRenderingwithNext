@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import styles from './index.module.css'
 import Card from './Card'
 import data from './api/data.json'
@@ -17,10 +18,12 @@ export default class Index extends React.Component {
     return (
         <div className={styles.app}>
             <header className={styles.header}>
+            <Link href='/page3'>
                 <img 
                 src="/logo.png" 
                 alt="logo"
                 className={styles.logo} />
+                </Link>
             </header>
             <div className={styles.grid}>
             {
